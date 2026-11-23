@@ -4,50 +4,6 @@ Paint en C++ y OpenGL
 
 Este proyecto consiste en una aplicación de dibujo 2D similar a Paint, desarrollada en C++ utilizando OpenGL. Cuenta con diferentes herramientas para dibujar, crear figuras, cambiar colores, rellenar espacios y rotar dibujos.
 
-flowchart TD
-    A([Inicio]) --> B[Inicializar GLFW y OpenGL]
-    B --> C[Configurar ventana y shaders]
-    C --> D[Inicializar VAO y VBO]
-    D --> E[Crear lienzo y cuadrícula]
-    E --> F[Mostrar interfaz gráfica]
-    F --> G{¿El programa sigue activo?}
-
-
-    G -->|No| H[Liberar recursos]
-    H --> I([Fin])
-
-
-    G -->|Sí| J[Leer eventos del mouse]
-    J --> K{¿Qué acción realiza el usuario?}
-
-
-    K -->|Seleccionar herramienta| L[Actualizar herramienta actual]
-    K -->|Seleccionar color| M[Actualizar color actual]
-    K -->|Presionar mouse| N[Registrar coordenadas iniciales]
-    K -->|Mover mouse| O{¿Está dibujando?}
-    K -->|Limpiar lienzo| P[Borrar contenido del lienzo]
-
-
-    O -->|Sí| Q[Calcular puntos del dibujo]
-    O -->|No| R[Esperar eventos]
-
-
-    N --> S[Activar estado de dibujo]
-    S --> Q
-
-
-    Q --> T[Aplicar algoritmo correspondiente]
-    T --> U[Actualizar información del lienzo]
-
-
-    L --> F
-    M --> F
-    P --> F
-    U --> V[Renderizar con OpenGL]
-    V --> W[Actualizar pantalla]
-    R --> G
-    W --> G
-
 Tecnologías utilizadas
 
 - C++
