@@ -1,8 +1,4 @@
-// =====================================================================
-//  PAINT EN C++ Y OPENGL CORE  -  Proyecto: paintluzacarrillo
-//  Panel lateral con ImGui. El lienzo se rasteriza a mano (Bresenham y Flood Fill).
-// =====================================================================
-
+// Proyecto: paintluzacarrillo
 #include <glad/glad.h>                // carga las funciones de OpenGL
 #include <GLFW/glfw3.h>               // ventana, mouse y contexto
 #include "imgui.h"                    // nucleo de ImGui
