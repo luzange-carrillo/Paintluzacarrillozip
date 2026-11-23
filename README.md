@@ -14,7 +14,7 @@ Tecnologías utilizadas
 
 Arquitectura del código:
 
-El proyecto está organizado en un solo archivo (`main.cpp`), dividido en varias secciones y funciones:
+El proyecto está organizado en un solo archivo de main:
 
 - Variables y datos: contiene los colores, las herramientas y las matrices que guardan la información del dibujo.
 - Interfaz: crea los botones y la paleta de colores.
@@ -24,7 +24,7 @@ El proyecto está organizado en un solo archivo (`main.cpp`), dividido en varias
 - Manejo del mouse: detecta los clics y movimientos para utilizar las herramientas.
 - Renderizado: utiliza OpenGL para mostrar los dibujos en pantalla.
 
-¿Cómo funciona?
+Funcionamiento
 
 El lienzo está formado por una cuadrícula de 80 columnas y 60 filas. Cada celda guarda su color en una matriz llamada `tramaPixeles`.
 
@@ -43,10 +43,5 @@ Se implementó una herramienta de selección que permite separar una figura del 
 
 La interfaz se realizó con Dear ImGui, mientras que GLFW y GLAD se utilizaron para trabajar con la ventana y OpenGL.
 
-Resultado
+Resultado: Se obtuvo una aplicación de dibujo que reúne diferentes herramientas y permite aplicar los algoritmos y conceptos de programación gráfica trabajados durante el proyecto.
 
-Se obtuvo una aplicación de dibujo que reúne diferentes herramientas y permite aplicar los algoritmos y conceptos de programación gráfica trabajados durante el proyecto.
-
-Ejecución
-
-Proyecto desarrollado en Visual Studio 2022. Requiere GLFW, GLAD y Dear ImGui para su compilación y ejecución.
